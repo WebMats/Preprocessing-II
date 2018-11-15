@@ -1,1 +1,25 @@
 // Navigation Styles here
+
+nav {
+    display: flex;
+    @media @phone {
+        flex-flow: column;
+        align-items: center;
+        h2.logo {font-size: 3rem;}
+    }
+    align-items: baseline;
+    justify-content: space-between;
+    .logo {font-size: 3.9rem;}
+    .nav {
+        display: flex;
+        @media @phone {
+            margin-top: .7rem;
+            width: 100%;
+            justify-content: space-around;
+        }
+        .nav__item {
+            font-size: 1.6rem;
+            .duomargin(0, 1.8rem);
+        }
+    }
+}

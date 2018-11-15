@@ -1,1 +1,16 @@
 // Mixins in here
+
+.duomargin(@td; @lr) {
+    margin: @arguments;
+}
+
+.button-creator(@color, @width, @height, @fcolor) {
+    width: @width;
+    height: @height;
+    border-radius: 16px;
+    background-color: @color;
+    color: @fcolor;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
